@@ -132,7 +132,7 @@ header.sticky a:hover {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;   
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: underline;
   padding-top: 2%;
 }
@@ -162,7 +162,7 @@ header.sticky a:hover {
   color: #ffffff;   
   font-size: 45px;
   text-decoration: none;
-  margin-top: 7%;
+  margin-top: 6%;
 }
 
 .para1 
@@ -240,7 +240,23 @@ heart
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 4%;
+    width: 25%;
+}
+
+.wholesome1
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    height: 22%;
+    width: 25%;
+}
+
+.wholesome2
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    height: 22%;
     width: 25%;
 }
 
