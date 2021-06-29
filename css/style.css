@@ -152,7 +152,7 @@ header.sticky a:hover {
   color: #ffffff;   
   font-size: 45px;
   text-decoration: none;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .header4 
@@ -218,9 +218,33 @@ heart
     position: relative;
     width: 10%;
     height: 15%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 18%;
     border-radius: 20%;
+    border-style: double;
+    border: black;
+}
+
+.images2
+{
+    position: relative;
+    width: 12%;
+    height: 18%;
+    margin-top: 3%;
+    margin-left: 31%;
+    border-radius: 50%;
+    border-style: double;
+    border: black;
+}
+
+.images3
+{
+    position: relative;
+    width: 10%;
+    height: 12%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    border-radius: 25%;
     border-style: double;
     border: black;
 }
