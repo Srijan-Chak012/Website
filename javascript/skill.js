@@ -24,25 +24,25 @@ function validateForm()
 {
     var x = document.forms["skillform"]["fname"].value;
     if (x == "") {
-        swal("First Name must be filled out");
+        alert("First Name must be filled out");
         return false;
     }
 
     x = document.forms["skillform"]["lname"].value;
     if (x == "") {
-        swal("Last Name must be filled out");
+        alert("Last Name must be filled out");
         return false;
     }
 
     var x = document.forms["skillform"]["email"].value;
     if (x == "") {
-        swal("Email must be filled out");
+        alert("Email must be filled out");
         return false;
     }
 
     x = document.forms["skillform"]["skillname"].value;
     if (x == "") {
-        swal("Skill must be filled out");
+        alert("Skill must be filled out");
         return false;
     }
     
