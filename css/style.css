@@ -1,0 +1,399 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body
+{
+    background: #000;
+    min-height: 130vh;
+}
+
+header
+{
+    position: fixed;
+    background: #4a4e50;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 100000;
+}
+
+header.sticky
+{
+    padding: 5px 20px;
+    background: #fff;
+}
+
+header .logo
+{
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header .link
+{
+    float: left;
+    position: relative;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 20%; /* Four links of equal widths */
+    text-align: center;
+}
+
+/* header a:hover 
+{    
+    text-decoration: underline;
+    /* background-color: #000; 
+} */
+  
+header a.active {
+    float: left;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 15%; /* Four links of equal widths */
+    text-align: center;
+    background-color: #2283dd;
+}
+
+@media screen and (max-width: 500px) 
+{
+    header ul li a
+    {
+      float: none;
+      display:inline-flex;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: url(../pictures/background/panda-bg.jpg);
+    background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky .link
+{
+    color: #000;
+}
+
+header.sticky a.active {
+    float: left;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 15%; /* Four links of equal widths */
+    text-align: center;
+    background-color: #dd5d22;
+}
+/* 
+header.sticky a:hover {
+    text-decoration: underline;
+} */
+
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 25%;
+}
+
+.header 
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;   
+  font-size: 50px;
+  text-decoration: underline;
+  padding-top: 2%;
+}
+
+.header2 
+{
+  text-align: left;
+  color: #ffffff;   
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.header3 
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;   
+  font-size: 45px;
+  text-decoration: none;
+  margin-top: 15%;
+}
+
+.header4 
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;   
+  font-size: 45px;
+  text-decoration: none;
+  margin-top: 7%;
+}
+
+.para1 
+{
+    text-align: justify;
+    letter-spacing: 3px;
+    color: #ffffff; 
+    font-size: 30px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.para2 
+{
+    text-align: center;
+    letter-spacing: 3px;
+    color: #ffffff; 
+    font-size: 30px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+heart
+{
+    color: #69a4f1; 
+    font-size: 30px;
+}
+
+.banner2
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: url(../pictures/background/skills.jpg);
+    background-size: cover;
+}
+
+.banner4
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: url(../pictures/background/contact.jpg);
+    background-size: cover;
+}
+
+.images
+{
+    position: relative;
+    width: 10%;
+    height: 15%;
+    margin-top: 10%;
+    margin-left: 18%;
+    border-radius: 20%;
+    border-style: double;
+    border: black;
+}
+
+.banner3
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: url(../pictures/background/gallery.jpg);
+    background-size: cover;
+}
+
+.gallery
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 25%;
+}
+
+#skills 
+{
+    margin-top: 8%;
+    margin-left: 6%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 88%;
+}
+  
+#skills td, #skills th 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#skills tr:nth-child(even)
+{
+    background-color: #e9b05c;
+    color: #000;
+}
+
+#skills tr:nth-child(odd)
+{
+    background-color: #e2c18f;
+    color: #000;
+}
+  
+#skills tr:nth-child(even):hover
+{
+    background-color: rgb(68, 24, 24);
+    color: #fff;
+}
+
+#skills tr:nth-child(odd):hover
+{
+    background-color: rgb(150, 43, 43);
+    color: #fff;
+}
+  
+#skills th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.formcontainer
+{
+    margin-top: 4%;
+    margin-left: 10%;
+    font-size: 25px;
+    color: thistle;
+}
+
+input
+{
+    margin-top: 1%;
+    font-size: larger;
+    line-height: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.btn
+{
+    background-color:rgb(129, 178, 211);
+    height: 35px;
+    width: 63px;
+    font-size: 18px;
+}
+
+#outermost_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#inner_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+#flex_children {
+    min-width: 200px;
+    max-width: 300px;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+table,
+thead,
+td {
+    border-collapse: collapse;
+}
+
+.achiev table {
+    background-color: white;
+}
+
+.achiev thead {
+    background-color: pink;
+}
+
+.achiev td {
+    border: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding: 5px
+}
+
+.achiev th {
+    border: 2px solid black;
+    padding: 5px
+}
+
+.achiev table {
+    border: 2px solid black;
+}
+
+.interest_table th {
+    margin: 2px;
+    text-align: left;
+    font-weight: normal;
+    width: 20%;
+}
+
+.interest_table table {
+    width: 100%
+}
+
+.items {
+    margin: 1px;
+    box-shadow: 1px 1px rgb(255, 107, 181, .15);
+    height: 40px;
+}
+
+.items:not(.active_1):hover {
+    background-color: rgb(255, 107, 181, .55);
+}
+
+.active_1 {
+    background-color: rgb(255, 107, 181);
+}
+
+.non_active {
+    background-color: pink;
+}
