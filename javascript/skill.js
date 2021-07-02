@@ -1,11 +1,11 @@
 var dict = {};
 if (typeof (Storage) !== "undefined") 
 {
-    for (var key in localStorage) 
+    for (var key in sessionStorage) 
     {
         try 
         {
-            var data = JSON.parse(localStorage.getItem(key));
+            var data = JSON.parse(sessionStorage.getItem(key));
             if (data.check === "ThisIsFormData") 
             {
                 document.getElementById('InsertHere').innerHTML += '<tr><td>' + key + '</td><td>' + data.lastname + '</td><td>' + data.skill +
@@ -67,7 +67,7 @@ function addData() {
     dict[firstname] = { lastname, email, skill, level, check };
     if (typeof (Storage) !== "undefined") 
     {
-        localStorage.setItem(firstname, JSON.stringify(dict[firstname]));
+        sessionStorage.setItem(firstname, JSON.stringify(dict[firstname]));
     }
     document.getElementById('InsertHere').innerHTML += '<tr><td>' + firstname + '</td><td>' + lastname + '</td><td>' + skill +
         '</td><td>' + email + '</td><td>' + level + '</td></tr>';
